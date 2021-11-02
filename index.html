@@ -11,12 +11,11 @@
 <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/muicss/0.10.2/css/mui.min.css" type="text/css" rel="stylesheet" />
 <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/muicss/0.10.2/js/mui.min.js" type="application/javascript"></script>
 <style>
-	*{
-		margin:0;
-		padding:0;
-	}
 	body{
 		background-color:#eee;
+		overflow-x:hidden;
+		margin:0;
+		padding:0;
 	}
 	header{
 		display:flex;
@@ -76,8 +75,15 @@
 		-o-filter: blur(21px);
 		
 	}
-	.con{
+	article{
 		height:500px;
+		top:100vh;
+		left:0;
+		position:absolute;
+		padding:1vw;
+	}
+	article section{
+		position:relative;
 	}
 </style>
 </head>
@@ -107,12 +113,29 @@
 <div></div>
 </header>
 
+<nav>
 <div class="txt"><span>ENZY</span></div>
 <div class="txt"><span>ENZY</span></div>
+</nav>
 
-<div class="con">
+<article>
+<section>
 
-</div>
+	<div>
+	  <button class="mui-btn">Button</button>
+	  <button class="mui-btn mui-btn--primary">Button</button>
+	  <button class="mui-btn mui-btn--danger">Button</button>
+	  <button class="mui-btn mui-btn--accent">Button</button>
+	</div>
+	<div>
+	  <button class="mui-btn" disabled>Button</button>
+	  <button class="mui-btn mui-btn--primary" disabled>Button</button>
+	  <button class="mui-btn mui-btn--danger" disabled>Button</button>
+	  <button class="mui-btn mui-btn--accent" disabled>Button</button>
+	</div>
+
+</section>
+</article>
 
 </body>
 
