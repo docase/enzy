@@ -1,3 +1,5 @@
-aside{
-	position:fixed;
+@media not screen and (min-device-width: 320px) and (max-device-width: 480px){
+	aside{
+		position:fixed;
+	}
 }
