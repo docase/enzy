@@ -3,3 +3,29 @@
 		position:fixed;
 	}
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+	.product-overview{
+		text-align:center;
+		padding-bottom: 20px;
+	}
+	.product-overview li {
+		float: inherit;
+		display:inline-block;
+	}
+	.product-overview li a{
+		height: 2em;
+		line-height: 2em;
+	}
+	.links, .tags{
+		display: inherit
+	}
+	.tags dd{
+		display: inline-block;
+		margin-right: 4px;
+	}
+	.tags dd:nth-child(2){
+		margin-left: 0.5em;
+	}
+	
+}
